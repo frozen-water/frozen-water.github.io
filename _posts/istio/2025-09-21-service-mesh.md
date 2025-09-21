@@ -28,13 +28,35 @@ tags: [Istio,Service Mesh]
    - 장애 감지 후 우회, 자동 재시도
 
 # 서비스 메시 종류
-| 이름                      | 특징                                                             |
-|-------------------------|----------------------------------------------------------------|
-| Istio                   | 가장 널리 쓰임. Envoy 프록시 기반. 기능 풍부(트래픽 제어, 보안, 모니터링). 무겁고 복잡하다는 단점. |
-| Linkerd                 | CNCF 최초 졸업 프로젝트. Rust로 작성된 경량 메시. 단순성과 성능에 집중, 기능은 비교적 제한적.    |
-| Consul (HashiCorp)      | 서비스 디스커버리 + 메시 기능 통합. 인프라 관리와 함께 쓰기 좋음.                        |
-| Kuma (Kong)             | Envoy 기반. 설치/운영 편의성 강조. Kubernetes, VM 둘 다 지원.                 |
-| AWS App Mesh            | AWS 클라우드 환경 특화. Envoy 기반, EKS/ECS 등과 통합.                       |
-| Open Service Mesh (OSM) | Microsoft가 CNCF에 기부. 경량, SMI(Service Mesh Interface) API 지원.   |
+<table>
+  <tr>
+    <th>이름</th>
+    <th>특징</th>
+  </tr>
+  <tr>
+    <td>Istio</td>
+    <td>가장 널리 쓰임. Envoy 프록시 기반. 기능 풍부(트래픽 제어, 보안, 모니터링). 무겁고 복잡하다는 단점.</td>
+  </tr>
+  <tr>
+    <td>Linkerd</td>
+    <td>CNCF 최초 졸업 프로젝트. Rust로 작성된 경량 메시. 단순성과 성능에 집중, 기능은 비교적 제한적.</td>
+  </tr>
+  <tr>
+    <td>Consul (HashiCorp)</td>
+    <td>서비스 디스커버리 + 메시 기능 통합. 인프라 관리와 함께 쓰기 좋음.</td>
+  </tr>
+  <tr>
+    <td>Kuma (Kong)</td>
+    <td>Envoy 기반. 설치/운영 편의성 강조. Kubernetes, VM 둘 다 지원.</td>
+  </tr>
+  <tr>
+    <td>AWS App Mesh</td>
+    <td>AWS 클라우드 환경 특화. Envoy 기반, EKS/ECS 등과 통합.</td>
+  </tr>
+  <tr>
+    <td>Open Service Mesh (OSM)</td>
+    <td>Microsoft가 CNCF에 기부. 경량, SMI(Service Mesh Interface) API 지원.</td>
+  </tr>
+</table>
 
 

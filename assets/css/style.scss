@@ -1,7 +1,23 @@
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$font-family-base: 'JetBrains Mono', monospace;
-$font-family-headings: 'JetBrains Mono', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 
+// 기본 Chirpy SCSS 불러오기 (기존 코드 유지)
 @import "main";
+
+// 폰트 강제 적용
+body {
+  font-family: 'Comic Neue', cursive !important;
+}
+
+// 제목(h1~h6)에도 적용
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Comic Neue', cursive !important;
+}
+
+// 네비게이션 / 사이드바까지 전체 적용
+.sidebar, .site-title, .site-subtitle, .site-header {
+  font-family: 'Comic Neue', cursive !important;
+}

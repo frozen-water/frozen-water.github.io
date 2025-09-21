@@ -29,9 +29,8 @@ $ brew install istioctl
 
 ---
 
-- 첫번째 실행
-
-
+#### ***첫번째 실행***
+ 
 ```shell
 $ minikube start --memory=8192 --cpus=4 --driver=docker
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -46,7 +45,7 @@ $ minikube start --memory=8192 --cpus=4 --driver=docker
 - Rancher Desktop의 resource 제한을 좀 늘려서 재시도
 
 
-- 두번째 실행
+#### ***두번째 실행***
 
 
 ```shell
@@ -65,7 +64,7 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 - docker daemon이 아직 뜨지 않아서 실행이 안됨.
 
 
-- 세번째 실행
+#### ***세번째 실행***
 
 
 ```shell
@@ -79,7 +78,7 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 - 현재 Docker Desktop에 할당된 메모리가 **5.9GB**인데, Minikube 실행 옵션에서 **8GB**를 요청해서 실행이 안됨
 
 
-- 네번째 실행
+#### ***네번째 실행***
 
 
 ```shell
@@ -100,7 +99,6 @@ $ minikube start --driver=docker --cpus=2 --memory=4096
 🌟  애드온 활성화 : storage-provisioner, default-storageclass
 🏄  끝났습니다! kubectl이 "minikube" 클러스터와 "default" 네임스페이스를 기본적으로 사용하도록 구성되었습니다
 ```
-
 
 - 실행 설정 변경 후 성공
   - --cpus=2

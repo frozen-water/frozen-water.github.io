@@ -1,3 +1,10 @@
+---
+title: "Istio 실습 (with GPT)"
+date: 2025-09-21 13:00:00 +0900
+categories: [Service Mesh,Istio]
+tags: [Istio]
+---
+
 # 실습(GPT)
 ---
 

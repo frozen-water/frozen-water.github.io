@@ -8,7 +8,7 @@ tags: [Istio]
 # 실습(GPT)
 ---
 
-### minikube 설치
+### ***minikube 설치***
 
 ---
 
@@ -16,6 +16,7 @@ tags: [Istio]
 $ brew install minikube
 ```
 
+<br>
 
 ### Istioctl
 
@@ -25,12 +26,13 @@ $ brew install minikube
 $ brew install istioctl
 ```
 
+<br>
+
 ### minikube 실행
 
 ---
 
-#### ***첫번째 실행***
- 
+***첫번째 실행***
 ```shell
 $ minikube start --memory=8192 --cpus=4 --driver=docker
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -43,10 +45,9 @@ $ minikube start --memory=8192 --cpus=4 --driver=docker
 - docker resource 제한으로 실행 실패
 - Rancher Desktop의 resource 제한을 좀 늘려서 재시도
 
+<br>
 
-#### ***두번째 실행***
-
-
+***두번째 실행***
 ```shell
 $ minikube start --driver=docker --cpus=4 --memory=8192
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -61,10 +62,9 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
   - Memory: 8GB
 - docker daemon이 아직 뜨지 않아서 실행이 안됨.
 
+<br>
 
-#### ***세번째 실행***
-
-
+***세번째 실행***
 ```shell
 $ minikube start --driver=docker --cpus=4 --memory=8192
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -74,10 +74,9 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 ```
 - 현재 Docker Desktop에 할당된 메모리가 **5.9GB**인데, Minikube 실행 옵션에서 **8GB**를 요청해서 실행이 안됨
 
+<br>
 
-#### ***네번째 실행***
-
-
+***네번째 실행***
 ```shell
 $ minikube start --driver=docker --cpus=2 --memory=4096
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -99,6 +98,8 @@ $ minikube start --driver=docker --cpus=2 --memory=4096
 - 실행 설정 변경 후 성공
   - --cpus=2
   - --memory=4096
+  
+<br>
 
 ### Istio 설치
 
@@ -108,6 +109,8 @@ $ minikube start --driver=docker --cpus=2 --memory=4096
 $ istioctl install --set profile=demo -y
 ```
 - demo 프로파일은 학습/테스트용으로 여러 기능(mTLS, ingress gateway 등)이 다 켜져 있음.
+
+<br>
 
 ### namespace 레이블링(?)
 
@@ -119,6 +122,8 @@ $ kubectl label namespace istio-test istio-injection=enabled
 ```
 - 이 네임스페이스에 배포하는 Pod는 자동으로 Envoy Proxy(sidecar)가 주입됨.
 
+<br>
+
 ### sample application 배포
 
 ---
@@ -129,8 +134,9 @@ $ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml -n istio-test
 # 확인
 $ kubectl get pods -n istio-test
 ```
-
 - 각 Pod 옆에 istio-proxy 컨테이너(sidecar)가 붙어 있을 겁니다.
+
+<br>
 
 ### Istio Ingress Gateway 접근
 
@@ -147,6 +153,8 @@ $ kubectl get svc istio-ingressgateway -n istio-system
 $ minikube tunnel
 ```
 
+<br>
+
 ### (?)
 
 ---
@@ -159,6 +167,8 @@ $ minikube tunnel
     - 환경 구분
     - 운영 편의성 (해당 라벨의 파드만 삭제)
     - 확장성과 유연성
+
+<br>
 
 ### 요약
 

@@ -12,7 +12,7 @@ tags: [Istio]
 
 ---
 
-```bash
+```shell
 $ brew install minikube
 ```
 
@@ -21,7 +21,7 @@ $ brew install minikube
 
 ---
 
-```bash
+```shell
 $ brew install istioctl
 ```
 
@@ -32,7 +32,7 @@ $ brew install istioctl
 - 첫번째 실행
 
 
-```
+```shell
 $ minikube start --memory=8192 --cpus=4 --driver=docker
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
 ✨  유저 환경 설정 정보에 기반하여 docker 드라이버를 사용하는 중
@@ -49,7 +49,7 @@ $ minikube start --memory=8192 --cpus=4 --driver=docker
 - 두번째 실행
 
 
-```
+```shell
 $ minikube start --driver=docker --cpus=4 --memory=8192
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
 ✨  유저 환경 설정 정보에 기반하여 docker 드라이버를 사용하는 중
@@ -68,7 +68,7 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 - 세번째 실행
 
 
-```
+```shell
 $ minikube start --driver=docker --cpus=4 --memory=8192
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
 ✨  유저 환경 설정 정보에 기반하여 docker 드라이버를 사용하는 중
@@ -82,7 +82,7 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 - 네번째 실행
 
 
-```
+```shell
 $ minikube start --driver=docker --cpus=2 --memory=4096
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
 ✨  유저 환경 설정 정보에 기반하여 docker 드라이버를 사용하는 중
@@ -110,7 +110,7 @@ $ minikube start --driver=docker --cpus=2 --memory=4096
 
 ---
 
-```bash
+```shell
 $ istioctl install --set profile=demo -y
 ```
 - demo 프로파일은 학습/테스트용으로 여러 기능(mTLS, ingress gateway 등)이 다 켜져 있음.
@@ -119,7 +119,7 @@ $ istioctl install --set profile=demo -y
 
 ---
 
-```
+```shell
 $ kubectl create namespace istio-test
 $ kubectl label namespace istio-test istio-injection=enabled
 ```
@@ -130,7 +130,7 @@ $ kubectl label namespace istio-test istio-injection=enabled
 
 ---
 
-```bash
+```shell
 # 배포
 $ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml -n istio-test
 # 확인
@@ -143,7 +143,7 @@ $ kubectl get pods -n istio-test
 
 ---
 
-```bash
+```shell
 # 1. 게이트웨이 리소스 생성
 $ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml -n istio-test
 

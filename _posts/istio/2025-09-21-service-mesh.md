@@ -2,7 +2,7 @@
 title: "Service Mesh란?"
 date: 2025-09-21 13:00:00 +0900
 categories: [Service Mesh]
-tags: [Istio, Service Mesh]
+tags: [Istio,Service Mesh]
 ---
 
 # 서비스 메시란?

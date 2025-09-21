@@ -31,6 +31,7 @@ $ brew install istioctl
 
 - 첫번째 실행
 
+
 ```
 $ minikube start --memory=8192 --cpus=4 --driver=docker
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -46,6 +47,7 @@ $ minikube start --memory=8192 --cpus=4 --driver=docker
 
 
 - 두번째 실행
+
 
 ```
 $ minikube start --driver=docker --cpus=4 --memory=8192
@@ -65,6 +67,7 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 
 - 세번째 실행
 
+
 ```
 $ minikube start --driver=docker --cpus=4 --memory=8192
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -77,6 +80,7 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 
 
 - 네번째 실행
+
 
 ```
 $ minikube start --driver=docker --cpus=2 --memory=4096
@@ -96,6 +100,7 @@ $ minikube start --driver=docker --cpus=2 --memory=4096
 🌟  애드온 활성화 : storage-provisioner, default-storageclass
 🏄  끝났습니다! kubectl이 "minikube" 클러스터와 "default" 네임스페이스를 기본적으로 사용하도록 구성되었습니다
 ```
+
 
 - 실행 설정 변경 후 성공
   - --cpus=2

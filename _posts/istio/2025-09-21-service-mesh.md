@@ -36,3 +36,5 @@ tags: [Istio, Service Mesh]
 |Kuma (Kong)|Envoy 기반. 설치/운영 편의성 강조. Kubernetes, VM 둘 다 지원.|
 |AWS App Mesh|AWS 클라우드 환경 특화. Envoy 기반, EKS/ECS 등과 통합.|
 |Open Service Mesh (OSM)|Microsoft가 CNCF에 기부. 경량, SMI(Service Mesh Interface) API 지원.|
+
+

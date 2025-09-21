@@ -18,7 +18,7 @@ $ brew install minikube
 
 <br>
 
-### Istioctl
+### ***Istioctl***
 
 ---
 
@@ -28,11 +28,11 @@ $ brew install istioctl
 
 <br>
 
-### minikube 실행
+### ***minikube 실행***
 
 ---
 
-***첫번째 실행***
+첫번째 실행
 ```shell
 $ minikube start --memory=8192 --cpus=4 --driver=docker
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -47,7 +47,7 @@ $ minikube start --memory=8192 --cpus=4 --driver=docker
 
 <br>
 
-***두번째 실행***
+두번째 실행
 ```shell
 $ minikube start --driver=docker --cpus=4 --memory=8192
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -64,7 +64,7 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 
 <br>
 
-***세번째 실행***
+세번째 실행
 ```shell
 $ minikube start --driver=docker --cpus=4 --memory=8192
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -76,7 +76,7 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 
 <br>
 
-***네번째 실행***
+네번째 실행
 ```shell
 $ minikube start --driver=docker --cpus=2 --memory=4096
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0
@@ -101,7 +101,7 @@ $ minikube start --driver=docker --cpus=2 --memory=4096
   
 <br>
 
-### Istio 설치
+### ***Istio 설치***
 
 ---
 
@@ -112,7 +112,7 @@ $ istioctl install --set profile=demo -y
 
 <br>
 
-### namespace 레이블링(?)
+### ***namespace 레이블링(?)***
 
 ---
 
@@ -124,7 +124,7 @@ $ kubectl label namespace istio-test istio-injection=enabled
 
 <br>
 
-### sample application 배포
+### ***sample application 배포***
 
 ---
 
@@ -138,7 +138,7 @@ $ kubectl get pods -n istio-test
 
 <br>
 
-### Istio Ingress Gateway 접근
+### ***Istio Ingress Gateway 접근***
 
 ---
 
@@ -155,7 +155,7 @@ $ minikube tunnel
 
 <br>
 
-### (?)
+### ***(?)***
 
 ---
 
@@ -170,9 +170,9 @@ $ minikube tunnel
 
 <br>
 
-### 요약
+### ***요약***
 
 ---
 
-GPT 통해서 실습하며 이해를 하려 했으나, 역시 직접해보지 않으니 확 와닿진 않음.
+GPT 통해서 실습하며 이해를 하려 했으나, 역시 직접해보지 않으니 확 와닿진 않음.  
 조만간 직접 샘플 프로젝트로 실습해봐야겠다.

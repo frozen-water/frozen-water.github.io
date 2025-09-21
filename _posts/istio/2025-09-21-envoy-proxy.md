@@ -51,3 +51,14 @@ tags: [Istio,Data Plane,데이터 플레인]
 ---
 
 - ##### ***Envoy는 클라우드 네이티브 시대의 범용 L7 프록시이자, Service Mesh의 필수 구성 요소***
+
+
+### (?)
+
+---
+
+- mTLS
+  - Mutual Transport Layer Security의 줄임말로,
+    클라이언트와 서버가 서로를 인증하고, 암호화된 통신 채널을 맺는 방식입니다.
+    일반적인 **TLS(HTTPS)**는 서버만 인증하는 반면,
+    mTLS는 서버와 클라이언트 모두 인증서(cert)를 주고받아 신뢰를 검증합니다.

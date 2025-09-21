@@ -30,6 +30,7 @@ $ brew install istioctl
 ---
 
 - 첫번째 실행
+
 ```
 $ minikube start --memory=8192 --cpus=4 --driver=docker
 😄  Darwin 15.3.1 (arm64) 의 minikube v1.37.0

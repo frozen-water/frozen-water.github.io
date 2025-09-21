@@ -40,7 +40,6 @@ $ minikube start --memory=8192 --cpus=4 --driver=docker
 
 ⛔  Exiting due to RSRC_INSUFFICIENT_CORES: Requested cpu count 4 is greater than the available cpus of 2
 ```
-
 - docker resource 제한으로 실행 실패
 - Rancher Desktop의 resource 제한을 좀 늘려서 재시도
 
@@ -57,7 +56,6 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 💡  권장: Start the Docker service
 📘  문서: https://minikube.sigs.k8s.io/docs/drivers/docker/
 ```
-
 - Rancher Desktop의 docker resource 설정 변경 후 실행
   - CPU: 4
   - Memory: 8GB
@@ -74,7 +72,6 @@ $ minikube start --driver=docker --cpus=4 --memory=8192
 
 ❌  Exiting due to MK_USAGE: Docker Desktop has only 5921MB memory but you specified 8192MB
 ```
-
 - 현재 Docker Desktop에 할당된 메모리가 **5.9GB**인데, Minikube 실행 옵션에서 **8GB**를 요청해서 실행이 안됨
 
 
@@ -99,7 +96,6 @@ $ minikube start --driver=docker --cpus=2 --memory=4096
 🌟  애드온 활성화 : storage-provisioner, default-storageclass
 🏄  끝났습니다! kubectl이 "minikube" 클러스터와 "default" 네임스페이스를 기본적으로 사용하도록 구성되었습니다
 ```
-
 - 실행 설정 변경 후 성공
   - --cpus=2
   - --memory=4096
@@ -121,7 +117,6 @@ $ istioctl install --set profile=demo -y
 $ kubectl create namespace istio-test
 $ kubectl label namespace istio-test istio-injection=enabled
 ```
-
 - 이 네임스페이스에 배포하는 Pod는 자동으로 Envoy Proxy(sidecar)가 주입됨.
 
 ### sample application 배포

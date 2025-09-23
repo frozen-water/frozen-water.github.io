@@ -143,6 +143,7 @@ appVersion: "0.1"
 
 deployment.yaml
 ```shell
+{% raw %}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -164,12 +165,14 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.service.port }}
+{% endraw %}
 ```
 
 <br>
 
 service.yaml
 ```shell
+{% raw %}
 apiVersion: v1
 kind: Service
 metadata:
@@ -184,6 +187,7 @@ spec:
       port: {{ .Values.service.port }}
       targetPort: {{ .Values.service.port }}
       nodePort: {{ .Values.service.nodePort }}
+{% endraw %}
 ```
 
 helm으로 배포

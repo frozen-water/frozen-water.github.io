@@ -77,14 +77,20 @@ spec:
 ```
 
 
-# minikube 서비스 외부 접근 허용
+### minikube 서비스 외부 접근 허용
+
 ---
+
 ```shell
 $ minikube service -n kafka kafka --url
 ```
 
-# PVC 삭제
----
-```shell
+### PVC 삭제
 
+---
+
+```shell
+$ kubectl delete pvc <PVC_NAME> -n <NAMESPACE>
+#label selector
+$ kubectl delete pvc -l app.kubernetes.io/name=kafka -n kafka
 ```

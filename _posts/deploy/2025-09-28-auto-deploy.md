@@ -25,7 +25,7 @@ tags: [Kubernetes,Github Actions,Helm,ArgoCD]
 
 ---
 
-![img.png](img.png)
+![img.png](../../assets/img/auto-deploy.png)
 GitOps 배포 흐름
 1. 애플리케이션 코드 Git push
    - 개발자가 Application 저장소에 코드를 푸시하면, GitHub Actions가 트리거됨.
